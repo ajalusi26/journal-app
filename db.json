@@ -1,1 +1,44 @@
-
+{
+  "prompts": [
+    {
+      "prompt": "Write about a person who always makes you laugh. ",
+      "id": 1
+    },
+    {
+      "prompt": "What was the best gift you received as a child? ",
+      "id": 2
+    },
+    {
+      "prompt": "Write about an event in your life that changed it for the better. ",
+      "id": 3
+    },
+    {
+      "prompt": "Who has loved you unconditionally? ",
+      "id": 4
+    },
+    {
+      "prompt": "What guilty pleasure are you secretly grateful for? ",
+      "id": 5
+    },
+    {
+      "prompt": "Write about a person you are grateful for, but sometimes take for granted.",
+      "id": 6
+    },
+    {
+      "prompt": "What about today made you smile? ",
+      "id": 7
+    },
+    {
+      "prompt": "What did you eat this week that was delicious? ",
+      "id": 8
+    },
+    {
+      "prompt": "What is something great about your community?",
+      "id": 9
+    },
+    {
+      "prompt": "Write about something that always makes you smile, no matter what.",
+      "id": 10
+    }
+  ]
+}

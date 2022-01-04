@@ -1,1 +1,78 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
 
+div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+section {
+    margin: 10px;
+    margin-left: 20px;
+}
+
+#divInput {
+    height: 85%;
+    width: 100%;
+    /* border: 5px solid rgb(39, 39, 218); */
+    background-color: yellowgreen;
+}
+
+form {
+    margin: 10px;
+}
+
+p {
+    font-size: 23px;
+}
+
+p span {
+    color: #242121;
+}
+
+#inputBox {
+    height: 75%;
+    width: 97%;
+    color: #FFF8DC;
+    border: 2px solid rgb(29, 29, 218);
+    margin-left: 1%;
+}
+
+input {
+    vertical-align: top;
+    text-align: left
+}
+
+#saveEntry {
+    margin: 20px;
+}
+
+#monthDiv {
+    width: 100%;
+    float: left;
+}
+
+div ul {
+    float: left;
+    padding-inline: 10px;
+    size: 200px;
+    font-size: 50px;
+}
+
+#divContainer {
+    height: auto;
+    width: 100%;
+    /* border: 5px solid blue; */
+    background-color: #6495ED;
+}
+
+#divPractice {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+    border: 5px solid rgb(39, 39, 218);
+    padding: 50px;
+}

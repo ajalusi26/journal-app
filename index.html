@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt.me HOME PAGE</title>
+    <link rel="stylesheet" href="style.css">
 
 
-    <style>
+    <!-- <style>
         html,
         body {
             margin: 0;
@@ -74,7 +75,7 @@
             border: 5px solid rgb(39, 39, 218);
             padding: 50px;
         }
-    </style>
+    </style> -->
 
 
 </head>
@@ -96,29 +97,31 @@
             </article>
         </main>
         <input type="text" id="inputBox">
+        <br><br>
+        <input id="saveEntry"type="submit" value="Save">
     </div>
     <div id="divContainer">
         <div id="monthDiv">
             <span>
                 <form action="/action_page.php">
-                    <label for="cars">Month:</label>
-                    <select name="cars" id="cars">
-                      <option value="january">January</option>
-                      <option value="february">February</option>
-                      <option value="march">March</option>
-                      <option value="april">April</option>
-                      <option value="may">May</option>
-                      <option value="june">June</option>
-                      <option value="july">July</option>
-                      <option value="august">August</option>
-                      <option value="september">September</option>
-                      <option value="october">October</option>
-                      <option value="november">November</option>
-                      <option value="december">December</option>
+                    <label for="months">Month:</label>
+                    <select name="months" id="months">
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
                     </select>
                     <br><br>
                     <input type="submit" value="Submit">
-                  </form>
+                </form>
             </span>
         </div>
         <ul>

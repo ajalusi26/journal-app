@@ -23,7 +23,7 @@
         #divInput {
             height: 75%;
             width: 100%;
-            border: 5px solid rgb(39, 39, 218);
+            /* border: 5px solid rgb(39, 39, 218); */
             background-color: yellowgreen;
         }
 
@@ -37,9 +37,10 @@
 
         #inputBox {
             height: 75%;
-            width: 100%;
+            width: 97%;
             color: #FFF8DC;
-            /* border: 5px solid blue; */
+            border: 2px solid rgb(29, 29, 218);
+            margin-left: 1%;
         }
 
         input {
@@ -47,7 +48,8 @@
             text-align: left
         }
 
-        div h3 {
+        #monthDiv {
+            width: 100%;
             float: left;
         }
 
@@ -59,7 +61,7 @@
         }
 
         #divContainer {
-            height: 750px;
+            height: auto;
             width: 100%;
             /* border: 5px solid blue; */
             background-color: #6495ED;
@@ -85,9 +87,9 @@
                     <section>
                         <div>
                             <h3>hello. this is your prompt. tell me how you feel...</h3>
-                        <p data-scroll="native">
-                            <span>Tell me your story...</span>
-                        </p>
+                            <p data-scroll="native">
+                                <span>Tell me your story...</span>
+                            </p>
                         </div>
                     </section>
                 </div>
@@ -96,8 +98,10 @@
         <input type="text" id="inputBox">
     </div>
     <div id="divContainer">
-        <div>
-            <h3>Month</h3>
+        <div id="monthDiv">
+            <span>
+                <h3>Month</h3>
+            </span>
         </div>
         <ul>
             <div id="divPractice">

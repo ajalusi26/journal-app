@@ -5,6 +5,6 @@ function getData(){
 }
 function updatePrompt(data){
     let num = Math.floor(Math.random() * 10)
-    let propmt = document.querySelector('h3')
-    propmt.innerText = data[num].propmt
+    let prompt = document.querySelector('h3')
+    prompt.innerText = data[num].prompt
 }

@@ -1,149 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./index.js"></script>
     <title>Prompt.me HOME PAGE</title>
 
-
     <style>
-        html,
-        body {
-            margin: 0;
-            height: 100%;
-        }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
 
-        div {
-            display: inline-block;
-            vertical-align: top;
-        }
+      div {
+        display: inline-block;
+        vertical-align: top;
+      }
 
-        #divInput {
-            height: 75%;
-            width: 100%;
-            /* border: 5px solid rgb(39, 39, 218); */
-            background-color: yellowgreen;
-        }
+      #divInput {
+        height: 75%;
+        width: 100%;
+        /* border: 5px solid rgb(39, 39, 218); */
+        background-color: yellowgreen;
+      }
 
-        p {
-            font-size: 23px;
-        }
+      p {
+        font-size: 23px;
+      }
 
-        p span {
-            color: #242121;
-        }
+      p span {
+        color: #242121;
+      }
 
-        #inputBox {
-            height: 75%;
-            width: 97%;
-            color: #FFF8DC;
-            border: 2px solid rgb(29, 29, 218);
-            margin-left: 1%;
-        }
+      #inputBox {
+        height: 75%;
+        width: 97%;
+        color: #fff8dc;
+        border: 2px solid rgb(29, 29, 218);
+        margin-left: 1%;
+      }
 
-        input {
-            vertical-align: top;
-            text-align: left
-        }
+      input {
+        vertical-align: top;
+        text-align: left;
+      }
 
-        #monthDiv {
-            width: 100%;
-            float: left;
-        }
+      #monthDiv {
+        width: 100%;
+        float: left;
+      }
 
-        div ul {
-            float: left;
-            padding-inline: 10px;
-            size: 200px;
-            font-size: 50px;
-        }
+      div ul {
+        float: left;
+        padding-inline: 10px;
+        size: 200px;
+        font-size: 50px;
+      }
 
-        #divContainer {
-            height: auto;
-            width: 100%;
-            /* border: 5px solid blue; */
-            background-color: #6495ED;
-        }
+      #divContainer {
+        height: auto;
+        width: 100%;
+        /* border: 5px solid blue; */
+        background-color: #6495ed;
+      }
 
-        #divPractice {
-            height: 100px;
-            width: 100px;
-            margin: auto;
-            border: 5px solid rgb(39, 39, 218);
-            padding: 50px;
-        }
+      #divPractice {
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        border: 5px solid rgb(39, 39, 218);
+        padding: 50px;
+      }
     </style>
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <div id="divInput">
-        <main>
-            <article>
-                <div>
-                    <section>
-                        <div>
-                            <h3>hello. this is your prompt. tell me how you feel...</h3>
-                            <p data-scroll="native">
-                                <span>Tell me your story...</span>
-                            </p>
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </main>
-        <input type="text" id="inputBox">
+      <main>
+        <article>
+          <div>
+            <section>
+              <div>
+                <h3>hello. this is your prompt. tell me how you feel...</h3>
+                <p data-scroll="native">
+                  <span>Tell me your story...</span>
+                </p>
+              </div>
+            </section>
+          </div>
+        </article>
+      </main>
+      <input type="text" id="inputBox" />
     </div>
     <div id="divContainer">
-        <div id="monthDiv">
-            <span>
-                <h3>Month</h3>
-            </span>
+      <div id="monthDiv">
+        <span>
+          <h3>Month</h3>
+        </span>
+      </div>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            one
+          </ul>
         </div>
-        <ul>
-            <div id="divPractice">
-                <ul>one</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>two</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>three</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>four</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>five</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>six</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>eight</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>seven</ul>
-            </div>
-        </ul>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            two
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            three
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            four
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            five
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            six
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            eight
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            seven
+          </ul>
+        </div>
+      </ul>
     </div>
-</body>
-
+  </body>
 </html>

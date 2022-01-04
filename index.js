@@ -1,3 +1,4 @@
+const url = "http://localhost:3000/prompts"
 function getData(){
     fetch(url)
     .then((r) => r.json())
@@ -5,6 +6,7 @@ function getData(){
 }
 function updatePrompt(data){
     let num = Math.floor(Math.random() * 10)
-    let prompt = document.querySelector('h3')
-    prompt.innerText = data[num].prompt
+    let updatePrompt = document.querySelector('h3')
+    updatePrompt.innerText = `Hello this is your prompt. ${data[num].prompt}`
 }
+getData()

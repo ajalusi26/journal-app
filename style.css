@@ -55,7 +55,7 @@ input {
   margin: 20px;
 }
 
-#monthDiv {
+.monthDiv {
   width: 100%;
   float: left;
 }
@@ -114,14 +114,17 @@ div ul {
   position: fixed;
   top: 40%;
   left: 50%;
+  /* margin-top: 100px; */
   transform: translate(-50%, -50%);
   width: 600px;
+  height: 700px;
   padding: 50px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
   background: #fff;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
+  overflow: scroll;
 }
 #popup.active {
   top: 50%;
@@ -131,6 +134,9 @@ div ul {
 }
 
 .popup-text {
-  font-size: 30px;
-  position: fixed;
+  font-size: 20px;
+  /* position: fixed; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }

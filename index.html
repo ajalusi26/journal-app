@@ -103,11 +103,12 @@
       <input id="saveEntry" type="submit" value="Save" />  -->
     </div>
     <div id="divContainer">
-      <div id="monthDiv">
+      <div class="monthDiv">
         <span>
           <form action="/action_page.php">
             <label for="months">Month:</label>
-            <select name="months" id="months">
+            <select name="months" class="months">
+              <option value="all">All</option>
               <option value="january">January</option>
               <option value="february">February</option>
               <option value="march">March</option>
@@ -122,99 +123,12 @@
               <option value="december">December</option>
             </select>
             <br /><br />
-            <input type="submit" value="Submit" />
+            <!-- <input type="submit" value="Submit" /> -->
           </form>
         </span>
       </div>
-      <!--<ul id="history">
-        <div id="divPractice">
-          <ul>
-            one
-          </ul>
-        </div>
-      </ul>
-       <ul>
-        <div id="divPractice">
-          <ul>
-            two
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            three
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            four
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            five
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            six
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            seven
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            eight
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            nine
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            ten
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            eleven
-          </ul>
-        </div>
-      </ul>
-      <ul>
-        <div id="divPractice">
-          <ul>
-            twelve
-          </ul>
-        </div>
-      </ul> -->
     </div>
-    <div id="popup">
-      <p class="popup-text"></p>
-      <button class="close-popup">Close</button>
-    </div>
+    <div id="popup" class="popup-text"></div>
     <script src="./index.js"></script>
   </body>
 </html>

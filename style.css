@@ -1,78 +1,136 @@
 html,
 body {
-    margin: 0;
-    height: 100%;
+  margin: 0;
+  height: 100%;
 }
 
 div {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 section {
-    margin: 10px;
-    margin-left: 20px;
+  margin: 10px;
+  margin-left: 20px;
 }
 
 #divInput {
-    height: 85%;
-    width: 100%;
-    /* border: 5px solid rgb(39, 39, 218); */
-    background-color: yellowgreen;
+  position: inherit;
+  height: 85%;
+  width: 100%;
+  /* border: 5px solid rgb(39, 39, 218); */
+  background-color: yellowgreen;
 }
 
 form {
-    margin: 10px;
+  margin: 10px;
+
+  justify-content: center;
+  justify-self: center;
+  top: 30%;
 }
 
 p {
-    font-size: 23px;
+  font-size: 23px;
 }
 
 p span {
-    color: #242121;
+  color: #242121;
 }
 
 #inputBox {
-    height: 75%;
-    width: 97%;
-    color: #FFF8DC;
-    border: 2px solid rgb(29, 29, 218);
-    margin-left: 1%;
+  height: 40vh;
+  width: 97%;
+  background-color: #fff8dc;
+  border: 2px solid rgb(29, 29, 218);
+  margin-left: 1%;
 }
 
 input {
-    vertical-align: top;
-    text-align: left
+  vertical-align: top;
+  text-align: left;
 }
 
 #saveEntry {
-    margin: 20px;
+  margin: 20px;
 }
 
 #monthDiv {
-    width: 100%;
-    float: left;
+  width: 100%;
+  float: left;
 }
 
 div ul {
-    float: left;
-    padding-inline: 10px;
-    size: 200px;
-    font-size: 50px;
+  float: left;
+  padding-inline: 10px;
+  size: 200px;
+  font-size: 50px;
 }
 
 #divContainer {
-    height: auto;
-    width: 100%;
-    /* border: 5px solid blue; */
-    background-color: #6495ED;
+  height: auto;
+  width: 100%;
+  /* border: 5px solid blue; */
+  background-color: #6495ed;
 }
 
-#divPractice {
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    border: 5px solid rgb(39, 39, 218);
-    padding: 50px;
+.divPractice {
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  border: 5px solid rgb(39, 39, 218);
+  padding: 50px;
+}
+.prompt {
+  font-size: 3vh;
+  text-align: center;
+}
+.date {
+  font-size: 5vh;
+  text-align: center;
+}
+.under-prompt {
+  text-align: center;
+}
+
+.headers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#divContainer.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+#divInput.active {
+  filter: blur(20px);
+  pointer-events: none;
+  user-select: none;
+}
+
+#popup {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  padding: 50px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+}
+#popup.active {
+  top: 50%;
+  visibility: visible;
+  opacity: 1;
+  transform: 0.5s;
+}
+
+.popup-text {
+  font-size: 30px;
+  position: fixed;
 }

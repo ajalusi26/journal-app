@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Prompt.me HOME PAGE</title>
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
 
     <!-- <style>
         html,
@@ -76,115 +74,147 @@
             padding: 50px;
         }
     </style> -->
+  </head>
 
-
-</head>
-
-<body>
+  <body>
     <div id="divInput">
-        <main>
-            <article>
-                <div>
-                    <section>
-                        <div>
-                            <h3>hello. this is your prompt. tell me how you feel...</h3>
-                            <p data-scroll="native">
-                                <span>Tell me your story...</span>
-                            </p>
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </main>
-        <input type="text" id="inputBox">
-        <br><br>
-        <input id="saveEntry"type="submit" value="Save">
+      <main>
+        <article class="headers">
+          <div>
+            <section>
+              <div>
+                <h2 class="date"></h2>
+                <h3 class="prompt"></h3>
+                <p data-scroll="native" class="under-prompt">
+                  <span>Tell me your story...</span>
+                </p>
+              </div>
+            </section>
+          </div>
+        </article>
+      </main>
+      <form action="POST" id="form">
+        <!-- <input type="text" id="inputBox" name="input" /> -->
+        <textarea name="input" id="inputBox" cols="30" rows="10"></textarea>
+        <input id="saveEntry" type="submit" value="Save" />
+      </form>
+
+      <!-- <br /><br />
+      <input id="saveEntry" type="submit" value="Save" />  -->
     </div>
     <div id="divContainer">
-        <div id="monthDiv">
-            <span>
-                <form action="/action_page.php">
-                    <label for="months">Month:</label>
-                    <select name="months" id="months">
-                        <option value="january">January</option>
-                        <option value="february">February</option>
-                        <option value="march">March</option>
-                        <option value="april">April</option>
-                        <option value="may">May</option>
-                        <option value="june">June</option>
-                        <option value="july">July</option>
-                        <option value="august">August</option>
-                        <option value="september">September</option>
-                        <option value="october">October</option>
-                        <option value="november">November</option>
-                        <option value="december">December</option>
-                    </select>
-                    <br><br>
-                    <input type="submit" value="Submit">
-                </form>
-            </span>
+      <div id="monthDiv">
+        <span>
+          <form action="/action_page.php">
+            <label for="months">Month:</label>
+            <select name="months" id="months">
+              <option value="january">January</option>
+              <option value="february">February</option>
+              <option value="march">March</option>
+              <option value="april">April</option>
+              <option value="may">May</option>
+              <option value="june">June</option>
+              <option value="july">July</option>
+              <option value="august">August</option>
+              <option value="september">September</option>
+              <option value="october">October</option>
+              <option value="november">November</option>
+              <option value="december">December</option>
+            </select>
+            <br /><br />
+            <input type="submit" value="Submit" />
+          </form>
+        </span>
+      </div>
+      <!--<ul id="history">
+        <div id="divPractice">
+          <ul>
+            one
+          </ul>
         </div>
-        <ul>
-            <div id="divPractice">
-                <ul>one</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>two</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>three</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>four</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>five</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>six</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>seven</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>eight</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>nine</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>ten</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>eleven</ul>
-            </div>
-        </ul>
-        <ul>
-            <div id="divPractice">
-                <ul>twelve</ul>
-            </div>
-        </ul>
+      </ul>
+       <ul>
+        <div id="divPractice">
+          <ul>
+            two
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            three
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            four
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            five
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            six
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            seven
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            eight
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            nine
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            ten
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            eleven
+          </ul>
+        </div>
+      </ul>
+      <ul>
+        <div id="divPractice">
+          <ul>
+            twelve
+          </ul>
+        </div>
+      </ul> -->
     </div>
-</body>
-
+    <div id="popup">
+      <p class="popup-text"></p>
+      <button class="close-popup">Close</button>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>

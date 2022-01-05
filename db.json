@@ -40,5 +40,31 @@
       "prompt": "Write about something that always makes you smile, no matter what.",
       "id": 10
     }
+  ],
+  "entryInfo": [
+    {
+      "journalText": "",
+      "prompt": "What guilty pleasure are you secretly grateful for?",
+      "date": "1/4/2022",
+      "id": 1
+    },
+    {
+      "journalText": "",
+      "prompt": "What guilty pleasure are you secretly grateful for?",
+      "date": "1/4/2022",
+      "id": 2
+    },
+    {
+      "journalText": "",
+      "prompt": "What guilty pleasure are you secretly grateful for?",
+      "date": "1/4/2022",
+      "id": 3
+    },
+    {
+      "journalText": "",
+      "prompt": "What guilty pleasure are you secretly grateful for?",
+      "date": "1/4/2022",
+      "id": 4
+    }
   ]
 }

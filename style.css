@@ -7,7 +7,14 @@ body {
   background-color: #f2f1ec;
 }
 
-div {
+/* class for header */
+.header {
+  display: inline-block;
+  vertical-align: top;
+  background-color: #f2f1ec;
+}
+
+/* div {
   display: inline-block;
   vertical-align: top;
   background-color: #f2f1ec;
@@ -18,7 +25,7 @@ div ul {
   padding-inline: 10px;
   size: 200px;
   font-size: 50px;
-}
+} */
 
 form {
   margin: 10px;
@@ -29,8 +36,8 @@ form {
 }
 
 h2 {
-  font-family: 'PT Serif', serif;
-  color: #DB5461;
+  font-family: "PT Serif", serif;
+  color: #db5461;
 }
 
 input {
@@ -52,10 +59,6 @@ section {
   margin-left: 20px;
 }
 
-
-
-
-
 /* Classes */
 
 .date {
@@ -74,7 +77,7 @@ section {
 .divMiddle {
   display: flex;
   justify-content: center;
-  background-color: #3891A6;
+  background-color: #3891a6;
   position: relative;
 }
 
@@ -93,6 +96,7 @@ section {
 .monthDiv {
   width: 100%;
   float: left;
+  position: relative;
 }
 
 .monthDropdown {
@@ -110,7 +114,7 @@ section {
 .prompt {
   font-size: 3vh;
   text-align: center;
-  color: #DB5461;
+  color: #db5461;
 }
 
 .under-prompt {
@@ -120,8 +124,6 @@ section {
 .span {
   background-color: #eee9e1;
 }
-
-
 
 /* IDs */
 
@@ -136,7 +138,7 @@ section {
   height: auto;
   width: 100%;
   /* border: 5px solid blue; */
-  background-color: #6495ed;
+  background-color: white;
 }
 
 #divContainer.active {
@@ -155,7 +157,6 @@ section {
   color: #dee2e6;
   width: 75%;
   position: inherit;
-
 }
 
 #inputBox {
@@ -172,7 +173,7 @@ section {
 }
 
 ::placeholder {
-  color: #E3655B;
+  color: #e3655b;
 }
 
 #popup {
@@ -201,4 +202,18 @@ section {
 
 #saveEntry {
   margin: 20px;
+}
+
+/* class for ul of entries */
+.ulEntries {
+  justify-self: center;
+  justify-content: center;
+  align-self: center;
+  position: flex;
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  padding: 30px;
+  border-color: 3px black;
+  background-color: none;
 }

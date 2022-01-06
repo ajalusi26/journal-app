@@ -1,33 +1,42 @@
+/* Elements */
+
 html,
 body {
   margin: 0;
   height: 100%;
+  background-color: #f2f1ec;
 }
 
 div {
   display: inline-block;
   vertical-align: top;
+  background-color: #f2f1ec;
 }
 
-section {
-  margin: 10px;
-  margin-left: 20px;
-}
-
-#divInput {
-  position: inherit;
-  height: 85%;
-  width: 100%;
-  /* border: 5px solid rgb(39, 39, 218); */
-  background-color: yellowgreen;
+div ul {
+  float: left;
+  padding-inline: 10px;
+  size: 200px;
+  font-size: 50px;
 }
 
 form {
   margin: 10px;
-
   justify-content: center;
   justify-self: center;
   top: 30%;
+  background-color: #f2f1ec;
+}
+
+h2 {
+  font-family: 'PT Serif', serif;
+  color: #DB5461;
+}
+
+input {
+  vertical-align: top;
+  text-align: left;
+  background-color: #fde84c7e;
 }
 
 p {
@@ -38,21 +47,47 @@ p span {
   color: #242121;
 }
 
-#inputBox {
-  height: 40vh;
-  width: 97%;
-  background-color: #fff8dc;
-  border: 2px solid rgb(29, 29, 218);
-  margin-left: 1%;
+section {
+  margin: 10px;
+  margin-left: 20px;
 }
 
-input {
-  vertical-align: top;
-  text-align: left;
+
+
+
+
+/* Classes */
+
+.date {
+  font-size: 5vh;
+  text-align: center;
+  -webkit-text-stroke: 1px solid black;
 }
 
-#saveEntry {
-  margin: 20px;
+.divTop {
+  border: 3.5px solid;
+  border-color: #f2f1ec;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.divMiddle {
+  display: flex;
+  justify-content: center;
+  background-color: #3891A6;
+  position: relative;
+}
+
+.headers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f1ec;
+}
+
+.months {
+  background-color: #fde84c7e;
+  color: rgba(0, 0, 0, 0.63);
 }
 
 .monthDiv {
@@ -60,11 +95,41 @@ input {
   float: left;
 }
 
-div ul {
-  float: left;
-  padding-inline: 10px;
-  size: 200px;
-  font-size: 50px;
+.monthDropdown {
+  color: #001a2c;
+}
+
+.popup-text {
+  font-size: 20px;
+  /* position: fixed; */
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.prompt {
+  font-size: 3vh;
+  text-align: center;
+  color: #DB5461;
+}
+
+.under-prompt {
+  text-align: center;
+}
+
+.span {
+  background-color: #eee9e1;
+}
+
+
+
+/* IDs */
+
+#divInput {
+  position: inherit;
+  height: 85%;
+  width: 100%;
+  background-color: #f2f1ec;
 }
 
 #divContainer {
@@ -72,31 +137,6 @@ div ul {
   width: 100%;
   /* border: 5px solid blue; */
   background-color: #6495ed;
-}
-
-.divPractice {
-  height: 100px;
-  width: 100px;
-  margin: auto;
-  border: 5px solid rgb(39, 39, 218);
-  padding: 50px;
-}
-.prompt {
-  font-size: 3vh;
-  text-align: center;
-}
-.date {
-  font-size: 5vh;
-  text-align: center;
-}
-.under-prompt {
-  text-align: center;
-}
-
-.headers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #divContainer.active {
@@ -108,6 +148,31 @@ div ul {
   filter: blur(20px);
   pointer-events: none;
   user-select: none;
+}
+
+#inputForm {
+  margin: 15px;
+  color: #dee2e6;
+  width: 75%;
+  position: inherit;
+
+}
+
+#inputBox {
+  background-color: #f2f1ec;
+
+  border: none;
+  outline: none;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 2%;
+
+  color: #001a2c;
+}
+
+::placeholder {
+  color: #E3655B;
 }
 
 #popup {
@@ -126,6 +191,7 @@ div ul {
   transition: 0.5s;
   overflow: scroll;
 }
+
 #popup.active {
   top: 50%;
   visibility: visible;
@@ -133,10 +199,6 @@ div ul {
   transform: 0.5s;
 }
 
-.popup-text {
-  font-size: 20px;
-  /* position: fixed; */
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+#saveEntry {
+  margin: 20px;
 }

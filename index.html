@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prompt.me HOME PAGE</title>
-    <link rel="stylesheet" href="style.css" />
 
-    <!-- <style>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompt.me HOME PAGE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+
+  <!-- <style>
         html,
         body {
             margin: 0;
@@ -74,61 +78,63 @@
             padding: 50px;
         }
     </style> -->
-  </head>
+</head>
 
-  <body>
-    <div id="divInput">
-      <main>
-        <article class="headers">
-          <div>
-            <section>
-              <div>
-                <h2 class="date"></h2>
-                <h3 class="prompt"></h3>
-                <p data-scroll="native" class="under-prompt">
-                  <span>Tell me your story...</span>
-                </p>
-              </div>
-            </section>
-          </div>
-        </article>
-      </main>
-      <form action="POST" id="form">
+<body>
+  <div id="divInput">
+    <main>
+      <article class="headers">
+        <div class="divTop">
+          <section>
+            <div>
+              <h2 class="date"></h2>
+              <h3 class="prompt"></h3>
+              <p data-scroll="native" class="under-prompt">
+              </p>
+            </div>
+          </section>
+        </div>
+      </article>
+    </main>
+    <div class="divMiddle">
+      <form action="POST" id="inputForm">
         <!-- <input type="text" id="inputBox" name="input" /> -->
-        <textarea name="input" id="inputBox" cols="30" rows="10"></textarea>
+        <textarea name="input" id="inputBox" placeholder="Tell me your story..." cols="30" rows="30"></textarea><br>
         <input id="saveEntry" type="submit" value="Save" />
       </form>
+    </div>
 
-      <!-- <br /><br />
+    <!-- <br /><br />
       <input id="saveEntry" type="submit" value="Save" />  -->
+  </div>
+  <div id="divContainer">
+    <div class="monthDiv">
+      <span class="span">
+        <form action="/action_page.php">
+          <label for="months" class="monthDropdown">Month:</label>
+          <select name="months" class="months">
+            <option value="all">All</option>
+            <option value="january">January</option>
+            <option value="february">February</option>
+            <option value="march">March</option>
+            <option value="april">April</option>
+            <option value="may">May</option>
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="august">August</option>
+            <option value="september">September</option>
+            <option value="october">October</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+          </select>
+          <br /><br />
+          <!-- <input type="submit" value="Submit" /> -->
+        </form>
+      </span>
     </div>
-    <div id="divContainer">
-      <div class="monthDiv">
-        <span>
-          <form action="/action_page.php">
-            <label for="months">Month:</label>
-            <select name="months" class="months">
-              <option value="all">All</option>
-              <option value="january">January</option>
-              <option value="february">February</option>
-              <option value="march">March</option>
-              <option value="april">April</option>
-              <option value="may">May</option>
-              <option value="june">June</option>
-              <option value="july">July</option>
-              <option value="august">August</option>
-              <option value="september">September</option>
-              <option value="october">October</option>
-              <option value="november">November</option>
-              <option value="december">December</option>
-            </select>
-            <br /><br />
-            <!-- <input type="submit" value="Submit" /> -->
-          </form>
-        </span>
-      </div>
-    </div>
-    <div id="popup" class="popup-text"></div>
-    <script src="./index.js"></script>
-  </body>
+  </div>
+  <div id="popup" class="popup-text"></div>
+  <script src="./index.js"></script>
+</body>
+
 </html>

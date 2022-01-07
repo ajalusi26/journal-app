@@ -89,7 +89,6 @@ section {
 }
 
 .holding {
-  display: inline;
   display: flex;
 }
 

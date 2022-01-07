@@ -1,12 +1,13 @@
 const promptUrl = "http://localhost:3000/prompts"
 const journalUrl = "http://localhost:3000/entryInfo"
 
+//get current date
 const today = new Date().toLocaleDateString()
     let date = document.querySelector('.date')
     date.innerText = `Today is ${today}`
 
 
-
+//main functions
 function getJournalData(){
     fetch(journalUrl)
     .then((r) => r.json())
@@ -37,17 +38,16 @@ function submitJournal(){
 }
 function dateSelection(){
     const selector = document.querySelector('.months')
-    let entryList = document.querySelectorAll('.divPractice')
+    let entryList = document.querySelectorAll('.ulEntries')
     selector.addEventListener('click', e => {
         switch (e.target.value) {
             case 'all': 
-                entryList = document.querySelectorAll('.divPractice')
+                entryList = document.querySelectorAll('.ulEntries')
                 entryList.forEach(item => {
                     item.style.display = "block"
                 });
                     break;
             case 'january': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '1/'){
                          item.style.display = "block"
@@ -57,7 +57,6 @@ function dateSelection(){
                 });
                     break;
                 case 'february': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '2/'){
                          item.style.display = "block"
@@ -68,7 +67,6 @@ function dateSelection(){
                 });
                 break;
                 case 'march': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '3/'){
                          item.style.display = "block"
@@ -79,7 +77,6 @@ function dateSelection(){
                 });
                 break;
                 case 'april': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '4/'){
                          item.style.display = "block"
@@ -90,7 +87,6 @@ function dateSelection(){
                 });
                 break;
                 case 'may': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '5/'){
                          item.style.display = "block"
@@ -101,7 +97,6 @@ function dateSelection(){
                 });
                 break;
                 case 'june': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '6/'){
                          item.style.display = "block"
@@ -112,7 +107,6 @@ function dateSelection(){
                 });
                 break;
                 case 'july': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '7/'){
                          item.style.display = "block"
@@ -123,7 +117,6 @@ function dateSelection(){
                 });
                 break;
                 case 'august': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '8/'){
                          item.style.display = "block"
@@ -134,7 +127,6 @@ function dateSelection(){
                 });
                 break;
                 case 'september': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '9/'){
                          item.style.display = "block"
@@ -145,7 +137,6 @@ function dateSelection(){
                 });
                 break;
                 case 'october': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '10'){
                          item.style.display = "block"
@@ -156,7 +147,6 @@ function dateSelection(){
                 });
                 break;
                 case 'november': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '11'){
                          item.style.display = "block"
@@ -167,7 +157,6 @@ function dateSelection(){
                 });
                 break;
                 case 'december': 
-                entryList = document.querySelectorAll('.divPractice')
                 entryList.forEach(item => {
                      if (item.innerText.substring(0,2) === '12'){
                          item.style.display = "block"
@@ -185,7 +174,7 @@ function dateSelection(){
 
 
 
-
+//functions called inside main functions
 function updatePrompt(data){
     let num = Math.floor(Math.random() * 10)
     let updatePrompt = document.querySelector('h3')
@@ -281,6 +270,7 @@ function popupText(div, button){
     
 }
 function deleteButton(button){
+    console.log('button',button)
     button.addEventListener('click', e => {
         let parent = button.parentNode
         parent.style.display = "none"
@@ -299,6 +289,7 @@ function comment(popup, popupData, id, data){
     let closeBttn = document.createElement('button')
     let commentP = document.createElement('p')
     let commentTitle = document.createElement('p')
+    commentForm.style.backgroundColor = 'white'
     commentTitle.textContent = "Your Comment:"
     commentP.textContent = data.comment
     input.type = "text"
@@ -343,7 +334,7 @@ function comment(popup, popupData, id, data){
     popup.append(closeBttn)
 }
 
-
+//call main functions
 dateSelection()
 getJournalData()
 getPromptData()

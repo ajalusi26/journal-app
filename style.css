@@ -214,14 +214,20 @@ section {
 
 /* class for ul of entries */
 .ulEntries {
-  /* justify-self: center; */
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  justify-items: center;
+  align-items: center;
   align-self: center;
   position: relative;
   height: 100px;
   width: 100px;
   margin: 10px;
   padding: 30px;
-  border-color: 3px black;
-  background-color: none;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  /* border-color: black; */
+  /* background-color: none; */
 }

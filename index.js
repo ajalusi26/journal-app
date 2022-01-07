@@ -199,6 +199,7 @@ function addOneEntry(obj){
         let button = document.createElement('button')
         button.innerText = "Delete"
         button.id = obj.id
+        button.style.margin = "auto"
         outerUl.classList.add('ulEntries')
         outerUl.id = obj.id
         div.id = obj.id
@@ -211,6 +212,7 @@ function addOneEntry(obj){
         console.log(outerUl)
         deleteButton(button)
         popupText(outerUl, button)
+        hover(outerUl, button)
 }
 function postJournalDataFromDB(data){
     data.forEach(item => {
@@ -221,6 +223,8 @@ function postJournalDataFromDB(data){
         let button = document.createElement('button')
         button.innerText = "Delete"
         button.id = item.id
+        button.style.margin = "auto"
+        innerUl.style.textAlign = "center"
         outerUl.classList.add('ulEntries')
         outerUl.id = item.id
         div.id = item.id
@@ -233,6 +237,7 @@ function postJournalDataFromDB(data){
         deleteButton(button)
         popupText(outerUl, button)
         hover(outerUl, button)
+        console.log('parent', button.parentElement)
     });
 }
 function popupText(div, button){

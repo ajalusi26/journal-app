@@ -232,6 +232,7 @@ function postJournalDataFromDB(data){
         container.appendChild(outerUl)
         deleteButton(button)
         popupText(outerUl, button)
+        hover(outerUl, button)
     });
 }
 function popupText(div, button){
@@ -332,6 +333,14 @@ function comment(popup, popupData, id, data){
     popup.append(commentTitle)
     
     popup.append(closeBttn)
+}
+function hover(outerUl, button){
+    outerUl.addEventListener('mouseover', e =>{
+        outerUl.style.cursor = 'pointer'
+    })
+    button.addEventListener('mouseover', e =>{
+        button.style.cursor = 'pointer'
+    })
 }
 
 //call main functions

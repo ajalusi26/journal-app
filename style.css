@@ -90,6 +90,8 @@ section {
 
 .holding {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .months {
@@ -212,7 +214,7 @@ section {
 
 /* class for ul of entries */
 .ulEntries {
-  justify-self: center;
+  /* justify-self: center; */
   justify-content: center;
   align-self: center;
   position: relative;

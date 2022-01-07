@@ -203,7 +203,7 @@ function sendToDB(newJournalData){
   .then((obj) => addOneEntry(obj));
 }
 function addOneEntry(obj){
-        let container = document.querySelector('#divContainer')
+        let container = document.querySelector('.holding')
         let outerUl = document.createElement('ul')
         let div = document.createElement('div')
         let innerUl = document.createElement('p')
@@ -225,7 +225,7 @@ function addOneEntry(obj){
 }
 function postJournalDataFromDB(data){
     data.forEach(item => {
-        let container = document.querySelector('#divContainer')
+        let container = document.querySelector('.holding')
         let outerUl = document.createElement('ul')
         let div = document.createElement('div')
         let innerUl = document.createElement('p')

@@ -41,5 +41,24 @@
       "id": 10
     }
   ],
-  "entryInfo": []
+  "entryInfo": [
+    {
+      "journalText": "fdsa",
+      "prompt": "What about today made you smile?",
+      "date": "1/7/2022",
+      "id": 1
+    },
+    {
+      "journalText": "fdsa",
+      "prompt": "Write about a person you are grateful for, but sometimes take for granted.",
+      "date": "1/7/2022",
+      "id": 2
+    },
+    {
+      "journalText": "fdsa",
+      "prompt": "What is something great about your community?",
+      "date": "1/7/2022",
+      "id": 3
+    }
+  ]
 }

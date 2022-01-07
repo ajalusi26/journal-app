@@ -88,6 +88,10 @@ section {
   background-color: #f2f1ec;
 }
 
+.holding {
+  display: inline;
+}
+
 .months {
   background-color: #fde84c7e;
   color: rgba(0, 0, 0, 0.63);
@@ -95,8 +99,8 @@ section {
 
 .monthDiv {
   width: 100%;
-  float: left;
-  position: relative;
+  /* float: left; */
+  /* position: relative; */
 }
 
 .monthDropdown {
@@ -128,17 +132,19 @@ section {
 /* IDs */
 
 #divInput {
-  position: inherit;
+  position: relative;
   height: 85%;
   width: 100%;
   background-color: #f2f1ec;
 }
 
 #divContainer {
-  height: auto;
-  width: 100%;
+  /* height: auto; */
+  /* width: 100%; */
   /* border: 5px solid blue; */
-  background-color: white;
+  /* background-color: rgba(68, 21, 199, 0.445); */
+  margin: 110px;
+  position: relative;
 }
 
 #divContainer.active {
@@ -209,10 +215,10 @@ section {
   justify-self: center;
   justify-content: center;
   align-self: center;
-  position: flex;
+  position: relative;
   height: 100px;
   width: 100px;
-  margin: auto;
+  margin: 10px;
   padding: 30px;
   border-color: 3px black;
   background-color: none;
